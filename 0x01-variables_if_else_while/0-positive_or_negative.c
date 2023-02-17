@@ -1,22 +1,30 @@
 #include<stdio>
-/*
- * main - outputs the variable
- * Return = Always(0)
+#include<time.h>
+#include<stdio.h>
+/**
+ * main - Start point
+ * Return = Always (0)
  */
 int main(void)
 {
-	int i = a;
-	var = 0;
+	int i;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 }
-while ('>'0)
+if (i > 0)
 {
-	printf("The number is positive\n" a);
+	printf("%d is positive\n", i);
 }
-while ('='0)
+else if  (i == 0)
 {
-	printf("The number is zero\n" a);
+	printf("%d is zero\n" i);
 }
-while ('<'0)
+while (i < 0)
 {
-	printf("The number is negative\n" a);
+	printf("%d is negative\n" i);
+}
+{
+	/* your code goes there */
+	return (0);
 }
