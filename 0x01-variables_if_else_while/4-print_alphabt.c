@@ -3,17 +3,15 @@
 /**
  * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
-	char letter = 'a';
+	char i;
 
-	while (letter <= 'z')
-
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
-	letter++;
+	for (i = 'a' ; i <= 'z' ; i++)
+		if (i != 'q' && i != 'e')
+			putchar(i);
 	putchar('\n');
 	return (0);
 }
