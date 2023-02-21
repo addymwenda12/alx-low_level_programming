@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include"main.h"
 
 /**
@@ -18,7 +19,7 @@ int print_sign(int n)
 		putchar('+');
 		return (1);
 	}
-	else if (n ==)
+	else if (n == 0)
 	{
 		putchar(48);
 		return (0);
