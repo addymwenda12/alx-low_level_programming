@@ -1,8 +1,8 @@
 #include<stdio.h>
-include"main.h"
+#include"main.h"
 
 /**
- * print_last_digit - prints last digit of a num
+ * print_last_digit - prints last digit of a number
  * @num : the number to extract the last digit from
  * Return: last value of last digit
  */
