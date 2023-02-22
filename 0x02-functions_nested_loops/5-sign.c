@@ -34,4 +34,5 @@ int print_sign(int n)
 		putchar('-');
 		putchar('/');
 	}
+	return (0);
 }
