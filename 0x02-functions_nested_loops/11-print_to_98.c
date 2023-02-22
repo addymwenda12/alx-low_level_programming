@@ -9,11 +9,16 @@
 
 void print_to_98(int n)
 {
-	int step = (n < 98) ? 1 : -1;
-
-	for (int i = n ; i != 98 ; i += step)
+	if (n < 98)
 	{
-		printf("%d, ", i);
+		for (n = n ; n < 98 ; n++)
+			printf("%d, ", n);
+		printf("%d, ", n);
 	}
-	printf("98\n");
+	else
+	{
+		for (n = n ; n > 98 ; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
 }
