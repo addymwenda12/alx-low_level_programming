@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<math.h>
 /**
   * main - print a table of the first 178 fibonacci numbers.
   * Return: Nothing.
