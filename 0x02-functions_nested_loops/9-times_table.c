@@ -4,9 +4,7 @@
 /**
  * times_table - prints the 9 times table, starting with 0
  *
- * Description: This function uses nested loops to iterate over all pairs of
- * numbers from 0 to 9, computes their product, and prints the results in a 
- * formatted way that resembles a multiplication table.
+ *
  *
  * Return: none
  */
@@ -34,13 +32,12 @@ void times_table(void)
 				putchar(product / 10 + '0');
 				putchar(product % 10 + '0');
 			}
-			
 			if (j != 9)
 			{
-				putchar('_');
+				putchar(',');
 				putchar(' ');
 			}
-			else 
+			else
 			{
 				putchar('\n');
 			}
