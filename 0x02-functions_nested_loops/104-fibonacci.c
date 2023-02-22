@@ -13,13 +13,13 @@ int main(void)
 	count = 0;
 	x = 0;
 	y = 1;
-	amount = 10000000000000000000;/*10^18*/
+	amount = pow(10, 18);/*10^18*/
 	for (count = 1; count <= 91; count++)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		printf("%d %lu\n", count + 1, k);
+		printf("%d %lu\n", count + 1, z);
 	}
 	ia = x / amount;
 	ib = x % amount;
