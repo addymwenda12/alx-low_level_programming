@@ -5,6 +5,7 @@
  * print_number - prints an integer
  *
  * @n: the integer to print
+ * Return: 0 (success)
  */
 
 void print_number(int n)
