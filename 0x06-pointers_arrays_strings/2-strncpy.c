@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stddef.h>
 
 /**
  * _strncpy - Copies a string, but uses at most n bytes from src
@@ -12,7 +13,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	size_t i;
+	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
