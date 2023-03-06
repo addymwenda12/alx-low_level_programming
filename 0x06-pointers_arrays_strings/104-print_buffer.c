@@ -33,7 +33,7 @@ void print_buffer(char *b, int size)
 
 		for (j = 0; j < 10; j++)
 		{
-			if (i + j < size)
+			if (i + j >= size)
 			{
 				printf("%02x ", (unsigned char)b[i + j]);
 			}
@@ -60,7 +60,10 @@ void print_buffer(char *b, int size)
 				}
 			}
 		}
-
+		if (i >= size)
+			continue;
 		printf("\n");
 	}
+	if (size <= 0)
+		printf("\n");
 }

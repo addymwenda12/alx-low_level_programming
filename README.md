@@ -1,1 +1,1 @@
-This is the project of variables and loop
+Contains ALX C programming language
