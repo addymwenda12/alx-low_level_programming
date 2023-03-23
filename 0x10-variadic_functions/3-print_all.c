@@ -11,29 +11,27 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list vl;
+	va_list lists;
 	int i;
-	char c;
 	char *string;
 
 	i = 0;
-	va_start(vl, format);
-	while (format != NULL && format[i] != '\0')
+	va_start(lists, format);
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
 			case 'c':
-				c = (char) va_arg(vl, int);
-				printf("%c", c);
+				printf("%c", (char) va_arg(lists, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(vl, int));
+				printf("%d", va_arg(lists, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(vl, double));
+				printf("%f", va_arg(lists, double));
 				break;
 			case 's':
-				string = va_arg(vl, char *);
+				string = va_arg(lists, char *);
 				if (string == NULL)
 				{
 					printf("(nil)");
@@ -50,5 +48,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(vl);
+	va_end(lists);
 }
