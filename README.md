@@ -19,3 +19,4 @@ algorithm section .
 * [0x08. C - Recursion](./0x08-recursion)
 * [0x09. C - Static libraries](./0x09-static_libraries)
 * [0x10. C - Variadic functions](./0x10-variadic_functions)
+* [0x12. C - Singly linked lists](./0x012-singly_linked_list)
