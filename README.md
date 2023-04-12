@@ -21,3 +21,6 @@ algorithm section .
 * [0x09. C - Static libraries](./0x09-static_libraries)
 * [0x10. C - Variadic functions](./0x10-variadic_functions)
 * [0x12. C - Singly linked lists](./0x012-singly_linked_list)
+* [0x13. C - More Singly linked lists](./0x013-singly_linked_list)
+* [0x14. C - 
+* [0x15. C - File I/O](./0x015-file_i/o)
