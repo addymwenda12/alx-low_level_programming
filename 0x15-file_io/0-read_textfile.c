@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <fcntl.h>
 
 /**
@@ -17,6 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *buffer;
+	ssize_t bytesread, byteswritten;
 
 	if (filename == NULL)
 		return (0);
@@ -32,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	ssize_t bytesread = read(fd, buffer, letters);
+	bytesread = read(fd, buffer, letters);
 
 	if (bytesread == -1)
 	{
@@ -41,7 +44,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	ssize_t byteswritten = write(STDOUT_FILENO, buffer, bytesread);
+	byteswritten = write(STDOUT_FILENO, buffer, bytesread);
 
 	if (byteswritten == -1 || byteswritten != bytesread)
 	{
