@@ -5,6 +5,7 @@
 #include <unistd.h>
 
 #define BUFFER_SIZE 1024
+#define ERROR_EXIT_CODE 98
 
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
