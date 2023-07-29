@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <fcntl.h>
+
 /**
  * main - copy a file.
  * @argc: the number of args
