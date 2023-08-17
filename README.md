@@ -24,3 +24,4 @@ algorithm section .
 * [0x13. C - More Singly linked lists](./0x013-singly_linked_list)
 * [0x14. C - Bit manipulation](./0x14-bit_manipulation)
 * [0x15. C - File I/O](./0x015-file_i/o)
+* [0x17. C - Doubly linked lists](./0x017-doubly linked lists)
