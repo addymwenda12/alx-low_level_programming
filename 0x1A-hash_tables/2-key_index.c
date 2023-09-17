@@ -7,7 +7,6 @@
  * key_index - Get the index of a key in a hash table.
  * @key: The key to be hashed
  * @size: The size of the hash table
- * 
  * Return: The index at which the key should be stored
  * in the hash table.
 */
