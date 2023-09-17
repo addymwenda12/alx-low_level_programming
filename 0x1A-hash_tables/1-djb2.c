@@ -3,7 +3,6 @@
 /**
  * hash_djb2 - Hashes a string using a djb2 algorithm
  * @str: string to be hashed
- * 
  * Return: The hash value of the string in unsigned long int
 */
 
