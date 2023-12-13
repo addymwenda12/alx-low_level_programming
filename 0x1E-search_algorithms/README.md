@@ -21,4 +21,4 @@ To contribute, please follow these steps:
 
 ## Installation
 To install the library, clone the repository to your local machine:
-``git clone https://github.com/0x01e-search_algorithms.git
+``git clone https://github.com/0x01e-search_algorithms.git``
